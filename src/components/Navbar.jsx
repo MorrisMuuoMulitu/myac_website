@@ -7,13 +7,13 @@ import React, { useState } from 'react'
       return (
         <nav className="fixed top-0 w-full bg-white shadow-lg z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-24">
+            <div className="flex items-center justify-between h-32">
               <div className="flex items-center">
                 <Link to="/" className="flex-shrink-0">
                   <img
                     src="https://ik.imagekit.io/5zp8ovb7c/MYAC/Makueni%20Youth%20Council%20Logo%20copy-1.png?updatedAt=1737573103832"
                     alt="MYAC Logo"
-                    className="h-20 w-auto"
+                    className="h-24 w-auto"
                   />
                 </Link>
               </div>

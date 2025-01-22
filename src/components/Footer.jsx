@@ -3,7 +3,7 @@ import React from 'react'
 
     export default function Footer() {
       return (
-        <footer className="bg-gradient-to-br from-[#0073E6] to-[#00A8E8] text-white py-12 mt-8">
+        <footer className="bg-[#0a6eba] text-white py-12 mt-8">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8">
               {/* About Section */}

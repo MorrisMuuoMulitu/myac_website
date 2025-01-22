@@ -7,8 +7,7 @@
       theme: {
         extend: {
           colors: {
-            primary: '#0073E6', // Blue from the logo
-            secondary: '#00A8E8', // Lighter blue for accents
+            primary: '#0a6eba', // Blue from the logo
             background: '#FFFFFF', // White background
           },
           fontFamily: {
