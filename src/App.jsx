@@ -7,6 +7,7 @@ import React from 'react'
     import Membership from './pages/Membership'
     import News from './pages/News'
     import Contact from './pages/Contact'
+    import Register from './pages/Register'
     import Navbar from './components/Navbar'
     import Footer from './components/Footer'
 
@@ -22,6 +23,7 @@ import React from 'react'
             <Route path="/membership" element={<Membership />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
           <Footer />
         </BrowserRouter>

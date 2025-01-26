@@ -13,7 +13,7 @@ import React, { useState } from 'react'
                   <img
                     src="https://ik.imagekit.io/5zp8ovb7c/MYAC/Makueni%20Youth%20Council%20Logo%20copy-1.png?updatedAt=1737573103832"
                     alt="MYAC Logo"
-                    className="h-24 w-auto"
+                    className="h-24 w-auto md:h-32"
                   />
                 </Link>
               </div>
@@ -78,7 +78,7 @@ import React, { useState } from 'react'
       return (
         <Link
           to={to}
-          className="px-3 py-2 rounded-md text-sm font-medium text-primary hover:text-secondary hover:bg-gray-100 transition duration-300"
+          className="px-3 py-2 rounded-md text-sm font-bold text-primary hover:text-secondary hover:bg-gray-100 transition duration-300"
         >
           {children}
         </Link>
@@ -89,7 +89,7 @@ import React, { useState } from 'react'
       return (
         <Link
           to={to}
-          className="block px-3 py-2 rounded-md text-base font-medium text-primary hover:text-secondary hover:bg-gray-100"
+          className="block px-3 py-2 rounded-md text-base font-bold text-primary hover:text-secondary hover:bg-gray-100"
         >
           {children}
         </Link>

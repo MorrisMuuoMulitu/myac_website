@@ -1,7 +1,14 @@
 import React from 'react'
     import { motion } from 'framer-motion'
+    import { useNavigate } from 'react-router-dom'
 
     export default function Home() {
+      const navigate = useNavigate()
+
+      const handleJoinMYAC = () => {
+        navigate('/register')
+      }
+
       return (
         <div className="min-h-screen pt-24 bg-white">
           {/* Hero Section */}
@@ -29,6 +36,7 @@ import React from 'react'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-white text-[#0a6eba] px-6 py-3 rounded-lg font-semibold shadow-lg"
+                  onClick={handleJoinMYAC}
                 >
                   Join MYAC
                 </motion.button>
