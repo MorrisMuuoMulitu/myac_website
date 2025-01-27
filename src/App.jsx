@@ -2,12 +2,12 @@ import React from 'react'
     import { BrowserRouter, Routes, Route } from 'react-router-dom'
     import Home from './pages/Home'
     import About from './pages/About'
-    import Programs from './pages/Programs'
-    import Impact from './pages/Impact'
+    import Events from './pages/Events'
     import Membership from './pages/Membership'
     import News from './pages/News'
     import Contact from './pages/Contact'
     import Register from './pages/Register'
+    import Donate from './pages/Donate'
     import Navbar from './components/Navbar'
     import Footer from './components/Footer'
 
@@ -18,12 +18,12 @@ import React from 'react'
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/programs" element={<Programs />} />
-            <Route path="/impact" element={<Impact />} />
+            <Route path="/events" element={<Events />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/donate" element={<Donate />} />
           </Routes>
           <Footer />
         </BrowserRouter>

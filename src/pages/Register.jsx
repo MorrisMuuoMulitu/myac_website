@@ -5,10 +5,8 @@ import React, { useState } from 'react'
         fullName: '',
         email: '',
         phoneNumber: '',
-        age: '',
         gender: '',
-        occupation: '',
-        address: '',
+        subcounty: '',
       })
 
       const handleChange = (e) => {
@@ -58,15 +56,6 @@ import React, { useState } from 'react'
                   onChange={handleChange}
                   required
                 />
-                <input
-                  type="number"
-                  name="age"
-                  placeholder="Age"
-                  className="w-full p-2 border rounded-lg"
-                  value={formData.age}
-                  onChange={handleChange}
-                  required
-                />
                 <select
                   name="gender"
                   className="w-full p-2 border rounded-lg"
@@ -79,24 +68,21 @@ import React, { useState } from 'react'
                   <option value="female">Female</option>
                   <option value="other">Other</option>
                 </select>
-                <input
-                  type="text"
-                  name="occupation"
-                  placeholder="Occupation"
+                <select
+                  name="subcounty"
                   className="w-full p-2 border rounded-lg"
-                  value={formData.occupation}
+                  value={formData.subcounty}
                   onChange={handleChange}
                   required
-                />
-                <input
-                  type="text"
-                  name="address"
-                  placeholder="Address"
-                  className="w-full p-2 border rounded-lg"
-                  value={formData.address}
-                  onChange={handleChange}
-                  required
-                />
+                >
+                  <option value="">Select Subcounty</option>
+                  <option value="Kaiti">Kaiti</option>
+                  <option value="Kilome">Kilome</option>
+                  <option value="Kibwezi East">Kibwezi East</option>
+                  <option value="Kibwezi West">Kibwezi West</option>
+                  <option value="Makueni">Makueni</option>
+                  <option value="Mbooni">Mbooni</option>
+                </select>
                 <button
                   type="submit"
                   className="w-full bg-secondary text-white p-2 rounded-lg"

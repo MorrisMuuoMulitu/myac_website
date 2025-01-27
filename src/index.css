@@ -5,3 +5,8 @@
     body {
       @apply bg-background text-gray-800;
     }
+
+    .hero {
+      background-color: #0a6eba;
+      color: white;
+    }

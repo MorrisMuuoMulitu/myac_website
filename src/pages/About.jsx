@@ -34,6 +34,19 @@ import React from 'react'
                 The MYAC Senate comprises 60 elected representatives from Makueni’s 30 wards, ensuring gender balance and grassroots representation. Together, they guide the council’s initiatives and ensure accountability.
               </p>
             </div>
+            <div className="mt-8">
+              <h2 className="text-2xl font-semibold mb-4 text-primary">MYAC Constitution</h2>
+              <p className="text-gray-700">
+                Download our constitution to learn more about our governance and structure.
+              </p>
+              <a
+                href="/path/to/myac_constitution.pdf"
+                download="myac_constitution.pdf"
+                className="text-primary hover:underline"
+              >
+                Download MYAC Constitution
+              </a>
+            </div>
           </div>
         </div>
       )

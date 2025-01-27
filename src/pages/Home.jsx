@@ -13,13 +13,13 @@ import React from 'react'
         <div className="min-h-screen pt-24 bg-white">
           {/* Hero Section */}
           <div className="relative h-screen flex items-center justify-center bg-[#0a6eba]">
-            <div className="absolute inset-0 bg-opacity-50 bg-white"></div>
+            <div className="absolute inset-0 bg-opacity-30 bg-black"></div>
             <div className="relative z-10 text-center px-4">
               <motion.h1
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-5xl md:text-7xl font-bold mb-6 text-white"
+                className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-white"
               >
                 Empowering Youth, Building Futures
               </motion.h1>
@@ -27,7 +27,7 @@ import React from 'react'
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-xl md:text-2xl mb-8 text-white"
+                className="text-lg md:text-xl lg:text-2xl mb-8 text-white"
               >
                 Join us in creating a sustainable future for Makueni's youth.
               </motion.p>
@@ -78,6 +78,9 @@ import React from 'react'
           {/* Our Partners Section */}
           <div className="container mx-auto px-4 py-12">
             <h2 className="text-3xl font-bold text-center mb-8 text-[#0a6eba]">Our Partners</h2>
+            <p className="text-center text-gray-700 mb-8">
+              We collaborate with organizations, institutions, and individuals who share our vision. Partner with us to amplify our impact and create lasting change.
+            </p>
             <div className="flex justify-center items-center space-x-8">
               <a href="https://www.kenyagreencongress.org/" target="_blank" rel="noopener noreferrer">
                 <img
