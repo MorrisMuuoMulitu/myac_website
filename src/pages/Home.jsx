@@ -9,6 +9,10 @@ export default function Home() {
     navigate("/membership");
   };
 
+  const handleExploreImpact = () => {
+    navigate("/impact");
+  };
+
   return (
     <div className="min-h-screen pt-24 bg-white">
       {/* Hero Section */}
@@ -35,7 +39,7 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-[#0a6eba] px-6 py-3 rounded-lg font-semibold shadow-lg"
+              className="bg-white text-[#0a6eba] px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-[#0a6eba] hover:text-white transition-colors duration-300"
               onClick={handleJoinMYAC}
             >
               Join MYAC
@@ -43,7 +47,8 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold shadow-lg"
+              className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-white hover:text-[#0a6eba] transition-colors duration-300"
+              onClick={handleExploreImpact}
             >
               Explore Our Impact
             </motion.button>
@@ -54,7 +59,12 @@ export default function Home() {
       {/* Quick Links Section */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
             <h2 className="text-2xl font-semibold mb-4 text-[#0a6eba]">
               Our Mission
             </h2>
@@ -62,23 +72,33 @@ export default function Home() {
               Empowering youth through leadership, education, and sustainable
               development.
             </p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
             <h2 className="text-2xl font-semibold mb-4 text-[#0a6eba]">
               Our Vision
             </h2>
             <p className="text-gray-700">
               A self-reliant, inclusive, and prosperous Makueni County.
             </p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-gray-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
             <h2 className="text-2xl font-semibold mb-4 text-[#0a6eba]">
               Our Values
             </h2>
             <p className="text-gray-700">
               Integrity, Equality, Innovation, and Community.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -93,39 +113,45 @@ export default function Home() {
           lasting change.
         </p>
         <div className="flex justify-center items-center space-x-8">
-          <a
+          <motion.a
             href="https://www.kenyagreencongress.org/"
             target="_blank"
             rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <img
               src="https://ik.imagekit.io/5zp8ovb7c/MUSA/kgc.webp?updatedAt=1732220827687"
               alt="KGC Logo"
               className="h-16 md:h-24 w-auto"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.musaconsortium.org/"
             target="_blank"
             rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <img
               src="https://ik.imagekit.io/5zp8ovb7c/MUSA/musa_logo.jpg?updatedAt=1732220026021"
               alt="MUSA Logo"
               className="h-16 md:h-24 w-auto"
             />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://seedballskenya.com/"
             target="_blank"
             rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <img
               src="https://ik.imagekit.io/5zp8ovb7c/Kaiti%20Greening%20Champions/images/Logos/seedballs.webp?updatedAt=1706519243006"
               alt="Seedballs Kenya Logo"
               className="h-16 md:h-24 w-auto"
             />
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
