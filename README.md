@@ -55,7 +55,6 @@ myac_website/
 │       ├── Membership.jsx
 │       ├── News.jsx
 │       ├── Programs.jsx
-│       └── Register.jsx
 └── tailwind.config.js
 ```
 
