@@ -34,15 +34,16 @@ export default function Home() {
             initial={{ opacity: 0, y: -80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg"
           >
-            Ignite Change, Empower Youth
+            Ignite Change,
+            <br className="hidden sm:block" /> Empower Youth
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-            className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-200 max-w-3xl mx-auto drop-shadow-md"
+            className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto drop-shadow-md"
           >
             We're building a movement of young leaders, innovators, and
             change-makers in Makueni. Join us and be part of the transformation.
