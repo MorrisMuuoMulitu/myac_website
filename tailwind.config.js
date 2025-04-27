@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,14 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0a6eba', // Blue from the logo
-        background: '#F9FAFB', // Light gray background
-        secondary: '#004d8a', // Darker blue for hover/accent
-        accent: '#ffcc00', // Yellow for highlights (optional)
+        primary: '#0066ff',
+        secondary: '#00c4cc',
+        accent: '#ff4d4d',
+        dark: '#0f172a',
+        light: '#f8fafc',
+        background: '#ffffff',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        body: ['Open Sans', 'sans-serif'],
+        sans: ['Barlow', 'sans-serif'],
+        display: ['Bebas Neue', 'sans-serif'],
       },
       fontSize: {
         'h1': '3rem',
