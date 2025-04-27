@@ -51,7 +51,7 @@ export default function About() {
         <div className="glass glass-dark rounded-3xl p-12 backdrop-blur-lg">
 
         {/* Mission & Vision */}
-        <div className="grid md:grid-cols-2 gap-16 mb-24 relative">
+        <div className="glass glass-dark grid md:grid-cols-2 gap-16 mb-24 relative">
           {/* Decorative element */}
           <div className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-blue-100 dark:bg-gray-800 opacity-30"></div>
           
@@ -85,7 +85,7 @@ export default function About() {
         </div>
 
         {/* Core Values */}
-        <div className="mb-20">
+        <div className="glass glass-dark mb-20 p-8 rounded-lg">
           <h2 className="text-2xl font-light text-center text-gray-900 dark:text-white mb-12">Core Values</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ValueItem
@@ -117,7 +117,7 @@ export default function About() {
         </div>
 
         {/* Senate Structure */}
-        <div className="mb-20">
+        <div className="glass glass-dark mb-20 p-8 rounded-lg">
           <h2 className="text-2xl font-light text-gray-900 dark:text-white mb-6">Senate Structure</h2>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
             The MYAC Senate consists of 60 elected representatives—two from each
@@ -128,7 +128,7 @@ export default function About() {
         </div>
 
         {/* Constitution */}
-        <div>
+        <div className="glass glass-dark p-8 rounded-lg">
           <h2 className="text-2xl font-light text-gray-900 dark:text-white mb-6">Our Constitution</h2>
           <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
             Our constitution outlines the principles, governance structure, and
